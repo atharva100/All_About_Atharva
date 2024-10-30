@@ -106,7 +106,7 @@ function Hero() {
       className="flex min-h-screen flex-col items-center justify-center gap-4 lg:gap-6"
       ref={heroRef}
     >
-      <div className="mt-8 lg:mt-20">
+      <div className="mt-16 lg:mt-20">
         <h1 className="hero-title text-4xl uppercase lg:text-7xl font-bai">
           {PROFILE.name}
         </h1>
