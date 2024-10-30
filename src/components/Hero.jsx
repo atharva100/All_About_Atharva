@@ -119,7 +119,7 @@ function Hero() {
         {PROFILE.subheading}
       </p>
       <a
-        href="/Varun_Soni_resume.pdf"
+        href="/Varun_Soni_resume(1).pdf"
         target="_blank"
         rel="noopener noreferrer"
         download
