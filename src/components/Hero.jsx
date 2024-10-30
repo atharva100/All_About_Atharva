@@ -58,46 +58,52 @@ function Hero() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
-        defaults: { ease: "power3.out", duration: 0.6 },
+        defaults: { ease: "power4.out", duration: 0.8 },
       });
-      
+  
+      // Hero Title Animation
       tl.from(".hero-title", {
         opacity: 0,
-        y: -50,
-        scale: 0.95,
-        duration: 0.8,
-        stagger: 0.15,
+        rotationX: 80,
+        transformOrigin: "0% 50%",
+        y: -100,
+        scale: 0.8,
+        filter: "blur(10px)",
+        stagger: 0.2,
       })
-      .from(
-        ".hero-text",
-        {
-          opacity: 0,
-          y: 30,
-          duration: 0.7,
-        },
-        "-=0.4"
-      )
-      .from(
-        ".hero-btn",
-        {
-          opacity: 0,
-          scale: 0.9,
-          duration: 0.7,
-        },
-        "-=0.3"
-      )
-      .from(
-        ".hero-img",
-        {
-          opacity: 0,
-          y: 100,
-          scale: 0.9,
-          duration: 0.8,
-        },
-        "-=0.5"
-      );
+      // Hero Text Animation
+      .from(".hero-text", {
+        opacity: 0,
+        x: -50,
+        rotationY: 30,
+        transformOrigin: "left center",
+        filter: "blur(5px)",
+        duration: 0.9,
+        ease: "back.out(1.7)",
+      }, "-=0.4")
+      // Hero Button Animation
+      .from(".hero-btn", {
+        opacity: 0,
+        scale: 0,
+        rotation: -180,
+        transformOrigin: "center center",
+        ease: "elastic.out(1, 0.3)",
+        duration: 1.2,
+      }, "-=0.6")
+      // Hero Image Animation
+      .from(".hero-img", {
+        opacity: 0,
+        scale: 1.5,
+        rotation: 15,
+        x: 100,
+        filter: "brightness(0.5) blur(20px)",
+        ease: "power2.out",
+        duration: 1,
+        clearProps: "all", // Ensures clean up after animation
+      }, "-=0.8");       
+  
     }, heroRef);
-    
+  
     return () => ctx.revert();
   }, []);
 
@@ -119,7 +125,7 @@ function Hero() {
         {PROFILE.subheading}
       </p>
       <a
-        href="/Varun_Soni_resume(1).pdf"
+        href="/Varun_Soni_resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         download
