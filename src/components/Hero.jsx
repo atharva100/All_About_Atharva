@@ -52,7 +52,7 @@ const useTypewriter = (phrases, typingSpeed = 100, deletingSpeed = 50, delayBetw
 
 function Hero() {
   const heroRef = useRef(null);
-  const phrases = ["Web Developer", "Data Analyst", "Programmer"];
+  const phrases = ["Data Engineer", "Business Intelligence"];
   const typewriterText = useTypewriter(phrases, 100, 50, 2000); // typing speed, deleting speed, delay between phrases
 
   useEffect(() => {
@@ -125,7 +125,7 @@ function Hero() {
         {PROFILE.subheading}
       </p>
       <a
-        href="/Varun_Soni_resume.pdf"
+        href="/Atharva_resume_April2025.pdf"
         target="_blank"
         rel="noopener noreferrer"
         download
@@ -134,13 +134,7 @@ function Hero() {
         <span>Download Resume</span>
         <RiArrowRightUpLine />
       </a>
-      <img 
-        src="/mumbai-winner.jpg" 
-        alt={PROFILE.name} 
-        width={400} 
-        height={400} 
-        className="hero-img rounded-3xl border border-purple-300/20 p-1" 
-      />
+    
     </section>
   );
 }

@@ -31,13 +31,13 @@ function Contact() {
         <h2 className="mb-8 text-3xl font-medium lg:text-4xl">Contact</h2>
         <p className="mb-4 text-lg lg:text-xl">
           Feel free to reach out to me via email : {" "}
-          <a href="mailto:sonivarun927@gmail.com" className="border-b">
-            sonivarun927@gmail.com
+          <a href="mailto:atharvakarawade1@gmail.com" className="border-b">
+            atharvakarawade1@gmail.com
           </a>
         </p>
         <div className="mt-8 flex justify-center space-x-6">
           <a
-            href="https://www.linkedin.com/in/varun-soni-97796b179/"
+            href="https://www.linkedin.com/in/atharva-karawade-a79374243/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-icon"
@@ -46,7 +46,7 @@ function Contact() {
             <RiLinkedinBoxFill />
           </a>
           <a
-            href="https://github.com/varunsoni3404"
+            href="https://github.com/atharva100"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-icon"

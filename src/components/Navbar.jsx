@@ -29,7 +29,7 @@ function Navbar() {
           <div className="flex items-center justify-center gap-6">
             <div>
               <a href="/">
-                <span className="uppercase">Varun Soni</span>
+                <span className="uppercase">Home</span>
               </a>
             </div>
           </div>
