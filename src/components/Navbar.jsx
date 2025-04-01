@@ -51,7 +51,7 @@ function Navbar() {
           <div className="flex items-center justify-between">
             <div>
               <a href="#">
-                <span className="pl-2 uppercase">Varun Soni</span>
+                <span className="pl-2 uppercase">Atharva</span>
               </a>
             </div>
             <div className="flex items-center">
