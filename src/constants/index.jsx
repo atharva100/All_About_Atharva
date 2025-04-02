@@ -150,9 +150,9 @@ export const EDUCATION = [
   },
   {
     id: 1,
-    degree: "12th HSC(92.5%)",
+    degree: "12th HSC(93%)",
     institution: "Pace Junior Science College",
-    duration: "2021 - 2025",
+    duration: "2019 - 2021",
     description:
       "Graduated with a minors degree in Computer Engineering with a curriculum tailored towards data analytics and business intelligence.",
   },
